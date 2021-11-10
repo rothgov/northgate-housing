@@ -121,6 +121,10 @@ form {
   text-decoration: none !important;
 }
 
+.btn:hover {
+  background-color: #66CBF3 !important;
+}
+
 /* footer */
 
 footer, .footer {
