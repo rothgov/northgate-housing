@@ -1,0 +1,2433 @@
+/**
+ * @northgate_default.css
+ * Default core CSS for NPS Responsive Self Serve
+ */
+
+body {
+    background: #fff;
+    height: 100%;
+    max-height: 100%;
+}
+
+html {
+    -webkit-overflow-scrolling: touch;
+}
+
+.btn {
+    white-space: normal;
+}
+
+.messages-region {
+    margin-top: 15px;
+}
+
+.logo-region {
+    text-align: center;
+    display: none;
+}
+
+.navbar-default {
+    background-color: #f1efeb;
+    border-bottom: 1px solid #f1efeb;
+}
+
+.nav>li>a:hover,
+.nav>li>a:focus {
+    text-decoration: none;
+    background-color: #f1efeb;
+}
+
+.navbar-current-page {
+    background: #fff
+}
+
+
+/* Disables FontAwesome icons in navbar */
+
+.sidebar ul.nav li a span {
+    display: none;
+}
+
+.navbar-header {
+    width: 100%;
+    float: none;
+    text-align: center;
+}
+
+.sidebar {
+    background-image: none;
+    margin-top: 0;
+    width: 100%;
+    position: relative;
+}
+
+@media (max-width: 480px) {
+    h1,
+    .h1 {
+        font-size: 24px
+    }
+    h2,
+    .h2 {
+        font-size: 18px
+    }
+    h3,
+    .h3 {
+        font-size: 14px
+    }
+    h4,
+    .h4 {
+        font-size: 12px
+    }
+    h5,
+    .h5 {
+        font-size: 11px
+    }
+    h6,
+    .h6 {
+        font-size: 10px
+    }
+}
+
+.rsv_core_P200 .alert {
+    margin-bottom: 1px;
+}
+
+.navbar-toggle {
+    background-color: #b9def0;
+    float: left;
+    margin-left: 15px;
+    margin-right: 0;
+}
+
+span.messages_span_close {
+    font-size: 12px;
+}
+
+
+/* TOTEST: Disallow !important */
+
+.key-details-close {
+    float: none;
+}
+
+.fielddata {
+    padding: 0 5px 0 5px
+}
+
+
+/* ----- Navigation Menu ----- */
+
+
+/* -- CONFIG CSS - Left-aligned sidebar by default, choose one of the following options and uncomment it (leaving others commented out) to configure -- */
+
+
+/* ----- Horizontal Menu ----- */
+
+.sidebar .nav>li {
+    display: inline-block;
+    min-width: 133px;
+}
+
+@media (max-width: 480px) {
+    .nav>li {
+        display: block;
+    }
+}
+
+.sidebar .nav>li>a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 15px;
+    min-width: 133px;
+    text-align: center;
+    color: #000;
+    font-weight: bold;
+}
+
+@media (max-width: 767px) {
+    .sidebar .nav>li>a {
+        text-align: left;
+    }
+}
+
+.sidebar ul li {
+    border-bottom: 0;
+}
+
+
+/* ----- Horizontal Menu END ----- */
+
+
+/* ----- Right-Aligned Menu ----- */
+
+
+/*
+.sidebar {
+   right: 0;
+}
+
+@media (min-width: 768px) {
+.page-wrapper {
+   margin: 0 250px 0 0;
+}
+}
+*/
+
+
+/* ----- Right-Aligned Menu END ----- */
+
+
+/* ----- Bottom-Aligned Menu ----- */
+
+
+/*
+.sidebar {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+*/
+
+
+/* ----- Bottom-Aligned Menu END ----- */
+
+
+/* ----- Positive Negative Zero Currency Numbers ----- */
+
+.negative_currency:before {
+    content: "-\00a3";
+    white-space: nowrap;
+}
+
+.negative_currency {
+    color: #b61f33;
+    text-decoration: none;
+}
+
+.negative_currency:hover {
+    color: #b61f33;
+    border-bottom: 1px solid #b61f33;
+    text-decoration: none;
+}
+
+.positive_currency:before {
+    content: "+\00a3";
+    white-space: nowrap;
+}
+
+.positive_currency {
+    color: #205139;
+    text-decoration: none;
+}
+
+.positive_currency:hover {
+    color: #205139;
+    border-bottom: 1px solid #205139;
+    text-decoration: none;
+}
+
+.zero_currency {
+    color: blue;
+}
+
+.zero_currency:before {
+    content: "\00a3";
+    white-space: nowrap;
+}
+
+.zero_currency:hover {
+    color: blue;
+    border-bottom: 1px solid blue;
+    text-decoration: none;
+}
+
+.currency_link:hover {
+    text-decoration: none;
+}
+
+.negative_value {
+    color: #b61f33;
+}
+
+.zero_value {
+    color: #313131;
+}
+
+.positive_value {
+    color: #205139;
+}
+
+
+/* ----- Positive Negative Zero Currency Numbers END ----- */
+
+
+/* -- My messages read/unread */
+
+.read {
+    font-weight: normal;
+}
+
+.unread {
+    font-weight: bold;
+}
+
+
+/* --- Links  --- */
+
+
+/*
+a {
+    color: #00892e;
+}
+a:hover,
+a:focus {
+    color: #003300;
+}
+*/
+
+
+/* ---- Rent Account Details Page ---- */
+
+
+/*CONFIG CSS -  For Content Left / Buttons Right, leave commented. For Buttons Left / Content Right, uncomment */
+
+.rac-content-region {
+    right: 0;
+    float: right;
+}
+
+.rac-button-region {
+    left: 0;
+    float: left;
+}
+
+
+/* For Content Top / Buttons Bottom, uncomment */
+
+
+/*
+.rac-content-region, .rac-button-region {
+   width: 100%;
+}
+*/
+
+
+/* For Buttons Top / Content Bottom, uncomment */
+
+
+/*
+.rac-content-region, .rac-button-region {
+   width: 100%;
+}
+
+.rent_account_details_region > .row {
+    display: flex;
+    flex-flow: column;
+}
+
+.rent_account_details_region .rac-button-region {
+    order: 1;
+}
+
+.rent_account_details_region .rac-content-region {
+    order: 2;
+}
+*/
+
+
+/*  PANEL CLASSES  */
+
+
+/* .panel-primary BEGIN */
+
+
+/*
+.panel-primary {
+    border-color: #009933;
+}
+.panel-primary>.panel-heading {
+    background-image: -webkit-linear-gradient(to bottom, #009933 0, #00b33c 100%);
+    background-image: linear-gradient(to bottom, #009933 0, #00b33c 100%);
+    background-repeat: repeat-x;
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#ff428bca', endColorstr='#ff357ebd', GradientType=0);
+}
+*/
+
+
+/* .panel-primary END */
+
+
+/* .panel-default-blue BEGIN */
+
+.panel-default-blue {
+    border-color: #4c7fb1;
+}
+
+.panel-default-blue .panel-heading {
+    border-color: #4c7fb1;
+    color: #fff;
+    background: linear-gradient(to bottom, #6ba8d1 0, #4c7fb1 100%);
+}
+
+.panel-default-blue a {
+    color: #4c7fb1;
+    ;
+}
+
+.panel-default-blue a:hover {
+    color: #6ba8d1;
+}
+
+
+/* .panel-default-blue END */
+
+
+/* .panel-green BEGIN */
+
+.panel-green {
+    border-color: #5cb85c;
+}
+
+.panel-green .panel-heading {
+    border-color: #5cb85c;
+    color: #fff;
+    background-color: #5cb85c;
+}
+
+.panel-green a {
+    color: #5cb85c;
+}
+
+.panel-green a:hover {
+    color: #3d8b3d;
+}
+
+
+/* .panel-green END */
+
+
+/* .panel-red BEGIN */
+
+.panel-red {
+    border-color: #d9534f;
+}
+
+.panel-red .panel-heading {
+    border-color: #d9534f;
+    color: #fff;
+    background-color: #d9534f;
+}
+
+.panel-red a {
+    color: #d9534f;
+}
+
+.panel-red a:hover {
+    color: #b52b27;
+}
+
+
+/* .panel-red END */
+
+
+/* .panel-indigo BEGIN */
+
+.panel-indigo {
+    border-color: #4F0B7B;
+}
+
+.panel-indigo .panel-heading {
+    border-color: #4F0B7B;
+    color: #fff;
+    background-color: #4F0B7B;
+}
+
+.panel-indigo a {
+    color: #4F0B7B;
+}
+
+.panel-indigo a:hover {
+    color: #b52b27;
+}
+
+
+/* .panel-indigo END */
+
+
+/* .panel-orange BEGIN */
+
+.panel-orange {
+    border-color: #FF6600;
+}
+
+.panel-orange .panel-heading {
+    border-color: #FF6600;
+    color: #fff;
+    background-color: #FF6600;
+}
+
+.panel-orange a {
+    color: #FF6600;
+}
+
+.panel-orange a:hover {
+    color: #b52b27;
+}
+
+
+/* .panel-orange END */
+
+
+/* .panel-gold BEGIN */
+
+.panel-gold {
+    border-color: #FFCC00;
+}
+
+.panel-gold .panel-heading {
+    border-color: #FFCC00;
+    color: #fff;
+    background-color: #FFCC00;
+}
+
+.panel-gold a {
+    color: #FFCC00;
+}
+
+.panel-gold a:hover {
+    color: #b52b27;
+}
+
+
+/* .panel-gold END */
+
+
+/* .panel-mustard BEGIN */
+
+.panel-mustard {
+    border-color: #D19E00;
+}
+
+.panel-mustard .panel-heading {
+    border-color: #D19E00;
+    color: #fff;
+    background-color: #D19E00;
+}
+
+.panel-mustard a {
+    color: #D19E00;
+}
+
+.panel-mustard a:hover {
+    color: #b52b27;
+}
+
+
+/* .panel-mustard END */
+
+
+/* .panel-terracotta BEGIN */
+
+.panel-terracotta {
+    border-color: #CF6621;
+}
+
+.panel-terracotta .panel-heading {
+    border-color: #CF6621;
+    color: #fff;
+    background-color: #CF6621;
+}
+
+.panel-terracotta a {
+    color: #CF6621;
+}
+
+.panel-terracotta a:hover {
+    color: #b52b27;
+}
+
+
+/* .panel-terracotta END */
+
+
+/* .panel-cinnamon BEGIN */
+
+.panel-cinnamon {
+    border-color: #C43021;
+}
+
+.panel-cinnamon .panel-heading {
+    border-color: #C43021;
+    color: #fff;
+    background-color: #C43021;
+}
+
+.panel-cinnamon a {
+    color: #C43021;
+}
+
+.panel-cinnamon a:hover {
+    color: #b52b27;
+}
+
+
+/* .panel-cinnamon END */
+
+
+/* .panel-plum BEGIN */
+
+.panel-plum {
+    border-color: #950029;
+}
+
+.panel-plum .panel-heading {
+    border-color: #950029;
+    color: #fff;
+    background-color: #950029;
+}
+
+.panel-plum a {
+    color: #950029;
+}
+
+.panel-plum a:hover {
+    color: #b52b27;
+}
+
+
+/* .panel-plum END */
+
+
+/* .panel-cerise BEGIN */
+
+.panel-cerise {
+    border-color: #A300CF;
+}
+
+.panel-cerise .panel-heading {
+    border-color: #A300CF;
+    color: #fff;
+    background-color: #A300CF;
+}
+
+.panel-cerise a {
+    color: #A300CF;
+}
+
+.panel-cerise a:hover {
+    color: #b52b27;
+}
+
+
+/* .panel-cerise END */
+
+
+/* .panel-purple BEGIN */
+
+.panel-purple {
+    border-color: #5800DB;
+}
+
+.panel-purple .panel-heading {
+    border-color: #5800DB;
+    color: #fff;
+    background-color: #5800DB;
+}
+
+.panel-purple a {
+    color: #5800DB;
+}
+
+.panel-purple a:hover {
+    color: #b52b27;
+}
+
+
+/* .panel-purple END */
+
+
+/* .panel-blue BEGIN */
+
+.panel-blue {
+    border-color: #0037ED;
+}
+
+.panel-blue .panel-heading {
+    border-color: #0037ED;
+    color: #fff;
+    background-color: #0037ED;
+}
+
+.panel-blue a {
+    color: #0037ED;
+}
+
+.panel-blue a:hover {
+    color: #b52b27;
+}
+
+
+/* .panel-blue END */
+
+
+/* .panel-skyblue BEGIN */
+
+.panel-skyblue {
+    border-color: #30D4FF;
+}
+
+.panel-skyblue .panel-heading {
+    border-color: #30D4FF;
+    color: #fff;
+    background-color: #30D4FF;
+}
+
+.panel-skyblue a {
+    color: #30D4FF;
+}
+
+.panel-skyblue a:hover {
+    color: #b52b27;
+}
+
+
+/* .panel-skyblue END */
+
+
+/* .panel-jade BEGIN */
+
+.panel-jade {
+    border-color: #00E000;
+}
+
+.panel-jade .panel-heading {
+    border-color: #00E000;
+    color: #fff;
+    background-color: #00E000;
+}
+
+.panel-jade a {
+    color: #00E000;
+}
+
+.panel-jade a:hover {
+    color: #b52b27;
+}
+
+
+/* .panel-jade END */
+
+
+/* .panel-olive BEGIN */
+
+.panel-olive {
+    border-color: #70D600;
+}
+
+.panel-olive .panel-heading {
+    border-color: #70D600;
+    color: #fff;
+    background-color: #70D600;
+}
+
+.panel-olive a {
+    color: #70D600;
+}
+
+.panel-olive a:hover {
+    color: #b52b27;
+}
+
+
+/* .panel-olive END */
+
+
+/* .panel-white-green BEGIN */
+
+.panel-white-green {
+    border-color: #58b200;
+}
+
+.panel-white-green .panel-heading {
+    border-color: #58b200;
+    color: #20523a;
+    background-color: #fff;
+}
+
+.panel-white-green .panel-footer {
+    border-color: #58b200;
+    color: #000;
+    background-color: #58b200;
+}
+
+.panel-white-green a {
+    color: #000;
+}
+
+.panel-white-green a:hover {
+    color: #fff;
+}
+
+
+/* .panel-white-green END */
+
+
+/* Panel styling */
+
+.panel-minimal {
+    margin-bottom: 15px;
+    padding: 0;
+}
+
+.huge {
+    font-size: 40px;
+}
+
+
+/* TODO: Disallow qualified headings, disallow !important*/
+
+
+/*
+.panel .panel-heading h4 a,
+.panel .panel-heading h5 a {
+    color: #fff!important
+}*/
+
+.uNotificationMessage {
+    position: relative;
+    width: 100%;
+    top: auto;
+    left: auto;
+    margin-left: 0;
+}
+
+
+/* XXX: Disallow universal selector - Due to configurable nature and multiple child element types, need to keep. */
+
+div.text-area-2 * {
+    width: 100%;
+    text-align: right;
+}
+
+
+/* Header Region Items */
+
+.navbar {
+    display: table;
+    width: 100%;
+}
+
+.nav-button-div,
+.nav-items-div {
+    display: table-cell;
+}
+
+.rsv-header-group {
+    color: white;
+    width: 100%;
+    display: table;
+    min-height: 50px;
+    table-layout: fixed;
+    text-align: center;
+    margin: 0;
+    list-style: none;
+}
+
+.rsv-header-group li {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.rsv-header-group a {
+    color: #fff;
+}
+
+.rsv-header-group>div {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+@media (max-width: 767px) {
+    .nav-button-div,
+    .nav-items-div {
+        display: block;
+    }
+    .rsv-header-group>div {
+        display: block;
+        min-height: 50px;
+        padding: 15px;
+    }
+    .nav-button-div {
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    .logonlink-group>div {
+        display: block;
+        min-height: 50px;
+        padding: 15px;
+    }
+}
+
+
+/* Tooltips/Hint Text */
+
+
+/*
+.top .tooltip-arrow {
+    border-top-color: #00892e;
+}
+.tooltip-inner {
+
+    background-color: #00892e;
+}
+*/
+
+
+/* Actions Menu */
+
+.dropdown-toggle {
+    white-space: nowrap;
+}
+
+
+/* Footer Links Region */
+
+.quick-links>div {
+    text-align: left;
+}
+
+.quick-links-body .panel-body {
+    background: #f5f5f5;
+}
+
+
+/* TODO: Disallow unqualified attribute selectors */
+
+.panel-heading [data-toggle="collapse"]:after {
+    font-family: 'FontAwesome';
+    content: "\f077";
+    float: right;
+    color: #b0c5d8;
+    font-size: 18px;
+}
+
+.panel-heading [data-toggle="collapse"].collapsed:after {
+    font-family: 'FontAwesome';
+    content: "\f078";
+    float: right;
+    color: #b0c5d8;
+    font-size: 18px;
+}
+
+
+/* Body Primary and Secondary */
+
+.body-primary-region {
+    padding-left: 0;
+}
+
+.body-secondary-region {
+    padding-right: 0;
+}
+
+.rsv_core .body-primary-region {
+    padding: 0;
+}
+
+@media all and (max-width: 991px) {
+    .body-primary-region {
+        padding: 0;
+    }
+    .body-secondary-region {
+        padding: 0;
+    }
+}
+
+
+/* CONFIG CSS - Uncomment to remove secondary body region and extend body primary*/
+
+.body-primary-region {
+    width: 100%;
+    padding: 0;
+}
+
+.body-secondary-region {
+    display: none;
+}
+
+
+/* CONFIG CSS - Uncomment to reverse the order of body primary and secondary*/
+
+
+/*
+.body-primary-region {
+    float: right;
+}
+
+.body-secondary-region {
+    float: left: ;
+}
+*/
+
+
+/* Table reflow */
+
+.div-table {
+    display: table;
+    font-size: 14px;
+    border-bottom: 0;
+    color: #8d8d8d;
+    margin: 0 0 10px 0;
+    width: 100%;
+}
+
+.table-container {
+    display: table;
+    width: 100%;
+}
+
+.table-container .table-row:nth-child(even) {
+    background: #f5f5f5;
+}
+
+.table-head {
+    display: table-header-group;
+    font-weight: 600;
+    text-align: left;
+    border: solid 1px #ddd;
+    color: #333;
+    background: rgb(242, 242, 242);
+    font-size: inherit;
+    vertical-align: middle;
+}
+
+.table-head .column {
+    background: #f2f2f2;
+    color: #000;
+    border-top: solid 1px #ddd;
+    border-bottom: 2px solid #ddd;
+}
+
+.table-row {
+    display: table-row;
+    padding: 3px 6px;
+    color: #333;
+    border-collapse: collapse;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.table-row .column:nth-child(1) {
+    border-left: 1px solid #ddd;
+}
+
+
+/*
+.table-row:hover {
+    background: #f9f9f9!important;
+}
+*/
+
+.column {
+    display: table-cell;
+    padding: 8px;
+    color: #333;
+    border-bottom: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    vertical-align: middle;
+}
+
+
+/* Responsive table */
+
+@media all and (max-width: 767px) {
+    .div-table,
+    .table-row,
+    .column,
+    .column:before {
+        display: block;
+    }
+    .div-table,
+    .table-row .column:last-child {
+        border-bottom: none;
+    }
+    .table-head {
+        position: absolute;
+        top: -1000em;
+        left: -1000em;
+    }
+    .table-row .column {
+        border-right: none;
+        text-align: left;
+    }
+    .table-row .column:nth-child(1) {
+        border-left: none;
+        border-right: none;
+    }
+    /* TODO: Disallow !important */
+    .table-row .column:last-child {
+        border-right: none;
+        border-bottom: none!important;
+    }
+    .table-row:last-child .column,
+    .column {
+        border-bottom: 1px solid #ddd;
+    }
+    .column:before {
+        font-weight: bold;
+        padding-right: 20px;
+        font-size: 12px;
+        content: "" attr(data-label)"";
+    }
+    .table-container>.table-row:nth-child(2) {
+        border-top-left-radius: 4px;
+        border-top-right-radius: 4px;
+    }
+    .table-container .table-row:last-child {
+        border-bottom-left-radius: 4px;
+        border-bottom-right-radius: 4px;
+    }
+}
+
+
+/* Fixing borders of div reflow table */
+
+.table-curved {
+    border: 0;
+    border-radius: 4px;
+}
+
+.table-container .table-head .table-row .column {
+    border-bottom: 2px solid #ddd;
+}
+
+.table-container .table-head .table-row .column:first-child {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 0;
+}
+
+.table-container .table-head .table-row .column:last-child {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 0;
+}
+
+.table-container>.table-row:last-child .column:first-child {
+    border-bottom-left-radius: 4px;
+}
+
+.table-container>.table-row:last-child .column:last-child {
+    border-bottom-right-radius: 4px;
+}
+
+div.text-area-1,
+div.text-area-2 {
+    width: 100%;
+}
+
+
+/* Quick Links */
+
+.quick-links ul {
+    list-style: none;
+    margin: 0;
+    margin-top: 10px;
+}
+
+
+/* TODO: Beware of broken box size */
+
+.quick-links li {
+    width: 100%;
+    padding: 10px 0 10px 0;
+    vertical-align: middle;
+    border-bottom: 1px solid white;
+}
+
+.quick-links li:first-child {
+    border-top: 1px solid white;
+}
+
+.quick-links a {
+    color: #1a74b7;
+}
+
+
+/* common footer links */
+
+.common-footer-links {
+    width: 100%;
+    display: table;
+    text-align: left;
+    list-style: none;
+    font-size: 10px;
+    margin: 0;
+    background-color: #fefefe;
+}
+
+.common-footer-links li {
+    display: table-cell;
+}
+
+.FTRL-ITEM-02 {
+    padding: 0 0;
+}
+
+@media (max-width: 480px) {
+    .rsv_P128 .rac_hrv_ate_image:after {
+/*        content: "\f054"; */
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 20px;
+        color: #313131;
+        font-family: FontAwesome;
+    }
+}
+
+
+/* Rent Account Summary Report Styling*/
+
+.services-region .panel-heading {
+    text-align: center;
+}
+
+@media (max-width: 767px) {
+    .panel-horizontal {
+        display: table;
+        width: 100%;
+    }
+    .panel-horizontal>.panel-heading,
+    .panel-horizontal>.panel-body,
+    .panel-horizontal>.panel-footer {
+        display: table-cell;
+    }
+    .panel-horizontal>.panel-heading,
+    .panel-horizontal>.panel-footer {
+        width: 75%;
+        border: 0;
+        vertical-align: middle;
+    }
+    .panel-horizontal>.panel-heading {
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 4px;
+        width: 25%;
+    }
+    .panel-horizontal>.panel-footer {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 4px;
+        border-top-right-radius: 4px;
+    }
+}
+
+.help-icon {
+    cursor: help;
+}
+
+
+/* Contact Details block */
+
+.cdecategory {
+    background-color: #F0F0F0;
+    margin-top: 20px;
+}
+
+.appcategory {
+    background-color: #F0F0F0;
+}
+
+
+/* RSV Admin */
+
+.rsvadmin-page-title {
+    font-size: 18px
+}
+
+.btn-default {
+    background-image: none;
+    border-color: #3d86c5;
+    font-weight: bold;
+}
+
+
+/* Log out button in header */
+
+#RSV-HEADER-HEADER_ITEM5:before {
+    font-family: fontawesome;
+    content: "\f08b";
+    margin-right: 5px;
+}
+
+
+/* Chevron Greater than Symbol in My Accounts Report */
+
+
+/*
+@media (min-width: 480px) {
+div[headers="COL02"] a:before {
+    font-family: fontawesome;
+    content: "\f054";
+    margin-right: 5px;
+}
+}
+*/
+
+.messages_span_close {
+    display: none;
+}
+
+.navbar {
+    background-image: linear-gradient(to bottom, #6ba8d1 0, #4c7fb1 100%);
+}
+
+footer,
+.footer {
+    bottom: 0;
+    width: 100%;
+    background-image: linear-gradient(to bottom, #6ba8d1 0, #4c7fb1 100%);
+    padding: 0;
+    min-height: 20px;
+    border: 1px solid #3d86c5;
+}
+
+
+/*
+.navbar-housing {
+    background: #227435;
+    color: #fff;
+}
+*/
+
+
+/* Sticky footer (non absolute) */
+
+html,
+body {
+    height: 100%;
+}
+
+
+/* XXX: Don't use IDs in selectors */
+
+#wwvFlowForm {
+    min-height: 100%;
+    height: auto;
+    position: relative;
+    margin: 0 auto -35px;
+}
+
+.footer,
+.push {
+    height: auto;
+    /* .push must be the same height as .footer */
+}
+
+
+/* Navbar structure begin*/
+
+ul.nav {
+    display: table;
+    width: 100%;
+}
+
+ul.nav li a {
+    display: block;
+}
+
+@media (max-width: 767px) {
+    ul.nav {
+        display: table;
+        width: 100%;
+    }
+    ul.nav li {
+        display: block;
+    }
+    ul.nav li a {
+        display: block;
+    }
+}
+
+
+/* Navbar structure end*/
+
+@media (min-width: 768px) {
+    /* TODO: Don't use IDs in selectors */
+    #quick-links-panel .panel-heading {
+        display: none;
+    }
+}
+
+#quick-links-panel {
+    border-top: 5px solid #428bca;
+    margin-top: 20px;
+}
+
+#quick-links-panel .panel-heading a {
+    color: black;
+    font-weight: 700;
+}
+
+span.quick-links-title {
+    font-weight: 700;
+}
+
+@media (max-width: 768px) {
+    span.quick-links-title {
+        font-weight: 700;
+    }
+}
+
+@media (min-width: 768px) {
+    #sort-filter-panel .panel-heading {
+        display: none;
+    }
+}
+
+#sort-filter-panel .panel-heading a {
+    color: black;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.rsv_core_P200 .services-region .panel-heading {
+    min-height: 85px;
+    padding-top: 20px;
+}
+
+
+/* Bootstrap datepicker */
+
+div.datepicker-days thead tr:first-child {
+    border-bottom: 1px solid #cbcbcb;
+}
+
+div.datepicker-days tfoot tr:first-child {
+    border-top: 1px solid #cbcbcb;
+}
+
+
+/* TODO: Don't use adjoining classes */
+
+.datepicker.dropdown-menu th,
+.datepicker.dropdown-menu td {
+    padding: 10px 8px;
+}
+
+
+/* TODO: Don't use adjoining classes */
+
+.datepicker table tr td.today,
+.datepicker table tr td.today:hover,
+.datepicker table tr td.today.disabled,
+.datepicker table tr td.today.disabled:hover {
+    background-image: none;
+    background-color: #237ec0;
+}
+
+.btn-load-more {
+    margin: 0 auto;
+    display: block;
+    width: 275px;
+}
+
+.input-group-addon:not(:first-child):not(:last-child),
+.input-group-btn:not(:first-child):not(:last-child),
+.input-group .form-control:not(:first-child):not(:last-child) {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.login-region {
+    background: #f1efeb;
+    padding: 15px;
+}
+
+.login-message,
+.bold-label {
+    font-weight: bold;
+}
+
+.datepicker-switch:after {
+    font-family: fontawesome;
+    content: "\f002";
+    margin-left: 10px;
+}
+
+.messages-icon {
+    color: #428bca;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 14px;
+}
+
+.tb-pagination table {
+    margin: 0 auto;
+}
+
+
+/* CONFIG CSS - Uncomment to enable quick links column 3 (Contact Us links) to always appear regardless of collapse/expand of quick links panel */
+/* NH-1543 change to permit hiding of quick links column 3 */
+@media (max-width: 767px) {
+    .quick-links-body {
+        height: auto!important;
+        display: block;
+    }
+    #quick-links-panel .ql-col-1,
+    .ql-col-2,
+    .ql-col-3 {
+        display: none;
+    }
+    /* TODO: Disallow !important */
+    #quick-links-panel .in .ql-col-1,
+    .in .ql-col-2,
+    .in .ql-col-3 {
+        display: block!important;
+    }
+}
+
+@media (min-width: 767px) {
+    .quick-links-body,
+    .sort-filter-body {
+        height: auto!important;
+        display: block;
+    }
+}
+
+.emailAddress {
+    font-weight: bold;
+}
+
+.title {
+    font-weight: bold;
+}
+
+.uLabelError {
+    display: block;
+    color: red;
+}
+
+.required-asterisk {
+    color: #d00
+}
+
+
+/* Configurable Form Pages */
+
+.config-form-mypref .table-container {
+    background-color: #F0F0F0;
+}
+
+.config-form .table-container .table-row:nth-child(2n) {
+    background-color: #F0F0F0;
+}
+
+.config-form .column {
+    border-bottom: none;
+    border-right: none;
+}
+
+.config-form .table-row .column:nth-child(1) {
+    border-left: none;
+}
+
+.config-form .form-group {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+/* Password Strength Indicator */
+
+
+/* XXX: Don't use IDs in selectors */
+
+#passwordStrength {
+    height: 10px;
+    display: block;
+    width: 100%;
+}
+
+.strength0 {
+    width: 250px;
+    background: #cccccc;
+}
+
+.strength1 {
+    width: 50px;
+    background: #ff0000;
+}
+
+.strength2 {
+    width: 100px;
+    background: #ff5f5f;
+}
+
+.strength3 {
+    width: 150px;
+    background: #56e500;
+}
+
+.strength4 {
+    background: #4dcd00;
+    width: 200px;
+}
+
+.strength5 {
+    background: #399800;
+    width: 250px;
+}
+
+.services-region a {
+    text-decoration: none;
+}
+
+.div-table-min {
+    display: table;
+    font-size: 14px;
+    color: #8d8d8d;
+    margin: 0;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table-head-min {
+    display: table-header-group;
+    font-weight: 600;
+    text-align: left;
+    color: #333;
+    font-size: inherit;
+    vertical-align: middle;
+}
+
+.table-row-min {
+    display: table-row;
+    padding: 3px 6px;
+    color: #333;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.column-min {
+    display: table-cell;
+    padding: 8px;
+    color: #333;
+    vertical-align: middle;
+}
+
+.column-min-btn {
+    display: inline;
+    vertical-align: middle;
+}
+
+/* NH-1256 added orientation */
+@media all and (max-width: 767px) and (orientation: portrait)
+{
+    .div-table-min,
+    .table-row-min,
+    .column-min,   
+	.column-min-btn
+    .column-min:before {
+        display: block;
+        position: relative;
+    }
+    .table-head-min {
+        position: absolute;
+        top: -1000em;
+        left: -1000em;
+    }
+}
+
+
+/* My Summary Icon Grid Bootstrap Padding Override */
+
+@media all and (max-width: 767px) {
+    .services-region div.services-tile {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .non-icon-grid .panel-heading {
+        display: none;
+    }
+    .non-icon-grid .panel-footer {
+        background-image: linear-gradient(to bottom, #428bca 0, #357ebd 100%);
+        background-repeat: repeat-x;
+        color: #fff;
+        border-top: 0;
+    }
+}
+
+.col-no-padding {
+    padding: 0;
+}
+
+
+/* XXX: Don't use IDs in selectors */
+
+#P185_TO_TEXT,
+#P185_TO_TEXT,
+#P185_VIEW,
+#P185_SORT_FILTER {
+    margin-top: 25px;
+}
+
+#repairs1>div.panel-title {
+    margin-bottom: 25px;
+}
+
+#P112_TO_TEXT,
+#P112_VIEW,
+#P112_SORT_FILTER {
+    margin-top: 25px;
+}
+
+.modaliframe {
+    border: none;
+    overflow: scroll;
+}
+
+
+/* TODO: Don't use IDs in selectors */
+
+.page-wrapper {
+    margin: 0!important;
+    background: inherit;
+}
+
+.services-region .services-tile:nth-child(3n+1) {
+    clear: both;
+}
+
+.panel-custom {
+    background: #f1efeb;
+    padding-top: 0;
+}
+
+
+/* TODO: Disallow overqualified elements x 3 */
+
+
+/* TODO: Disallow adjoining classes */
+
+
+/* TODO: Disallow !important */
+
+.page-wrapper.rsv_pageP160>div.container>div.body-wrapper>.body-primary-region.col-xs-12.col-md-9>div.row {
+    background: #f0f0f0!important;
+}
+
+.curr-bal,
+.bal-desc,
+.statement-text {
+    text-align: right;
+}
+
+@media all and (max-width: 767px) {
+    .bal-desc,
+    .statement-text {
+        text-align: left;
+    }
+    .curr-bal {
+        text-align: right;
+    }
+}
+
+.statement-hr {
+    border: 0;
+    border-top: 1px solid black;
+    margin: 20px -15px 20px -15px;
+}
+
+@media all and (max-width: 767px) {
+    .statement-hr {
+        display: none;
+    }
+    .statement-hdr-1,
+    .statement-hdr-2 {
+        padding: 10px 0;
+    }
+    .statement-hdr-2 {
+        border-top: 1px solid #000;
+        border-bottom: 1px solid #000;
+        margin: 10px 0;
+        overflow: hidden;
+    }
+}
+
+.acc-desc,
+.curr-bal {
+    font-size: 150%;
+}
+
+.footer .footertext {
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    text-shadow: 1px 1px #000;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    line-height: 1.1;
+    font-family: inherit;
+}
+
+.services-region .paneltext {
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    line-height: 1.1;
+    font-family: inherit;
+    display: block;
+}
+
+.alert-success {
+    color: #274d28
+}
+
+.pdi-checkbox {
+    float: left;
+}
+
+.form-inline-column {
+    width: 49%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.form-inline-column3 {
+    width: 16%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.date-seperate-inline div,
+.date-seperate-inline div input {
+    width: auto;
+    display: inline-block;
+}
+
+.date-inline-label {
+    text-align: center;
+}
+
+.date-inline-label span {
+    width: 100%;
+    display: block;
+}
+
+.date-inline-label .day {
+    margin-left: -11px;
+}
+
+.date-inline-label .month {
+    margin-left: -10px;
+}
+
+@media (max-width: 767px) {
+
+.date-inline-label .day {
+    margin-left: -3px;
+}
+
+.date-inline-label .month {
+    margin-left: -4px;
+}
+
+}
+.date-inline-label .year {
+    margin-left: -4px;
+}
+
+.mem-question {
+    font-weight: bold;
+}
+
+.app-name-report {
+    background-color: #F0F0F0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px 10px 10px 10px;
+    font-size: 18px
+}
+
+.display-record {
+    background-color: #F0F0F0;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-bottom: 5px solid #FFFFFF;
+}
+
+.rsv_P162 input {
+    border: 0;
+    box-shadow: none;
+    background: inherit;
+    cursor: auto;
+    margin-left: -12px;
+}
+
+.rsv_P162 .control-label {
+    font-weight: bold;
+}
+
+
+/* overwrite btn-success with btn-primary colors */
+
+
+/* TODO: Require use of known properties */
+
+.btn-success {
+    background-image: -moz-linear-gradient(top, #428bca 0%, #2d6ca2 100%);
+    /* FF3.6+ */
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #428bca), color-stop(100%, #2d6ca2));
+    /* Chrome,Safari4+ */
+    background-image: -webkit-linear-gradient(top, #428bca 0%, #2d6ca2 100%);
+    /* Chrome10+,Safari5.1+ */
+    background-image: -o-linear-gradient(top, #428bca 0%, #2d6ca2 100%);
+    /* Opera 11.10+ */
+    background-image: -ms-linear-gradient(top, #428bca 0%, #2d6ca2 100%);
+    /* IE10+ */
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#ff428bca', endColorstr='#ff2d6ca2', GradientType=0);
+    filter: progid: DXImageTransform.Microsoft.gradient(enabled=false);
+    background-repeat: repeat-x;
+    border-color: #2b669a
+}
+
+.btn-success:hover,
+.btn-success:focus {
+    background-color: #2d6ca2;
+    background-position: 0 -15px
+}
+
+
+/* TODO:Don't use adjoining classes */
+
+.btn-success:active,
+.btn-success.active {
+    background-color: #2d6ca2;
+    border-color: #2b669a
+}
+
+.rsv_core_P101 a.btn {
+    margin: 2px 0 0 0;
+}
+
+.header-cde span {
+    /*display: inline-table;*/
+    display: initial;
+}
+
+legend {
+    font-size: 16px;
+}
+
+.btn-link {
+    color: #000910;
+}
+
+a {
+    color: #317ab9;
+}
+
+.non-display {
+    display: none;
+}
+
+ul.nps-wizard li.active a .round-tab-sm {
+    font-weight: bold;
+    background: #317ab9;
+    color: white;
+}
+
+
+div.nps-wizard-progress .nav-tabs {
+  padding-bottom: 10px;
+}
+
+div.nps-wizard-progress .nav li {
+  min-height: auto !important;
+}
+
+span.round-tab-sm {
+    width: 25px;
+    height: 25px;
+    line-height: 20px;
+    display: inline-block;
+    border-radius: 100px;
+    background: #fff;
+    border: 2px solid #e0e0e0;
+    z-index: 2;
+/*    position: absolute;*/
+    left: 0;
+    text-align: center;
+    font-size: 25px;
+    margin-top: 25px;
+}
+
+#progress-bar-non-nav {
+    text-decoration: none; 
+    pointer-events: none;
+}
+
+#progress-bar-non-nav:hover a {
+   cursor: default; 
+   text-decoration: none;
+}
+
+/**
+*   To change Housing application progress bar below 767px make 
+*   one column properties edit below css:
+**/
+@media only screen and (max-width: 767px) {
+  div.nps-wizard-progress .nav-tabs {
+    padding-bottom: 10px;
+    min-height: auto;
+  }
+  div.nps-wizard-progress .nav li {
+    width: 100%;
+    padding-left: 15px;
+  }
+  ul.nps-wizard li.active a .round-tab-sm,
+  div.nps-wizard-progress span.round-tab-sm {
+    float: left;
+    margin-top: 16px;
+    padding-right: 15px;
+  }
+  ul.nps-wizard br {
+    clear: none !important;
+  }
+  ul.nps-wizard li.active a .hidden-xs,
+  .nps-wizard-progress .nps-wizard a .hidden-xs {
+    float: left;
+    padding-left: 10px;
+    display: block !important;
+  }
+  .nps-wizard-progress .nps-wizard a {
+    text-align: left;
+  }
+  /**
+*   To remove padding for fa-trash icon in People Summary page edit below css :
+**/
+  .rsv_P402 .fa-trash {
+    padding-top: 0px;
+  }
+}
+
+
+
+.child-toggle {
+    margin-left: 30px;
+}
+
+.fill_softred {
+  color: #d9534f;
+}
+
+.fill_red{
+  color: #ff0000;
+}
+
+.fill_scarlet{
+  color: #ff2400;
+}
+
+.fill_fire_engine_red{
+  color: #ce2029;
+}
+
+
+.fill_indigo{
+  color: #4F0B7B;
+}
+
+.fill_orange{
+  color: #FF6600;
+}
+
+.fill_gold{
+  color: #FFCC00;
+}
+
+.fill_mustard{
+  color: #D19E00;
+}
+
+.fill_terracotta {
+  color: #CF6621;
+}
+
+.fill_cinnamon{
+  color: #C43021;
+}
+
+.fill_plum {
+  color: #950029;
+}
+
+.fill_cerise {
+  color: #A300CF;
+}
+
+.fill_purple {
+  color: #5800DB;
+}
+
+.fill_blue {
+  color: #0037ED;
+}
+
+.fill_skyblue {
+  color: #30D4FF;
+}
+
+.fill_jade {
+  color: #00E000;
+}
+
+.fill_olive{
+  color: #70D600;
+}
+
+.fill_midgreen {
+  color: #5cb85c;
+}
+
+.fill_green{
+  color: #58b200;
+}
+
+    .form-element {
+      margin-bottom: 10px;
+    }
+
+    .form-hide-cbx {
+      width: 0px;
+      height: 0px
+    }
+
+    .form-hide-cbx-label {
+      border: 1px solid #e0e0e0;
+      background: #f5f5f5;
+      border-radius: 3px;
+      padding: 10px 0;
+      min-width: 200px;
+      text-align: center;
+      display: inline-block;
+      user-select: none;
+    }
+
+    .form-hide-cbx-label:hover {
+      cursor: pointer;
+      background: #eee;
+      border-color: #bdbdbd;
+      box-shadow: 0 0 8px 0px rgba(0,0,0,0.25);
+    }
+
+    .form-hide-cbx:checked + .form-hide-cbx-label {
+      background: #3F51B5;
+      color: white;
+      border-color: #303F9F;
+      box-shadow: 0 0 8px 0px #303F9F;
+    }
+
+
+.logonlink-group {
+    color: white;
+    width: 100%;
+    display: table;
+    min-height: 50px;
+    text-align: center;
+    margin-bottom: 20px;
+    list-style: none;
+}
+
+.logonlink-group>div {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+a.btn-resize {
+    height: auto;
+}
+
+.rsv-dtl input {
+    border: 0;
+    box-shadow: none;
+    background: inherit;
+    cursor: auto;
+    margin-left: -12px;
+}
+
+.rsv-dtl .control-label {
+    font-weight: bold;
+}
+
+/* Create Property Purchase Application wizard progress bar items */
+li.papp-prog-item {
+    width: 12%;
+}
+
+/* Create Payment Arrangements wizard progress bar items */
+li.crepa-prog-item {
+    width: 14.2%;
+}
+
+/* My Personal Details page, similar to p162 My Application Summary above*/
+
+.rsv_P482 input {
+    border: 0;
+    box-shadow: none;
+    background: inherit;
+    cursor: auto;
+    margin-left: -10px;
+}
+
+.rsv_P482 .control-label {
+    font-weight: bold;
+}
+
+.rsv_P483 .modal-header {
+    display:none;
+}
+
+.rsv_P484 .modal-header {
+    display:none;
+}
+
+.form-group.form-inline-column3.hyphen-seperate:after {
+    content: "-";
+    position: relative;
+    top: -27px;
+    left: -14px;
+}
+
+.currency1:before {
+    content: "\00a3";
+    white-space: nowrap;
+}
+
+.panel-custom2 {
+    background: #f1efeb;
+    padding-top: 0;
+    padding-bottom: 70px;
+}
+
+.field-prompt-min {
+    font-weight: 600;
+    text-align: left;
+    color: #333;
+    font-size: inherit;
+}
+
+@media all and (min-width: 768px) {
+    .field-prompt-min {
+        position: absolute;
+        top: -1000em;
+        left: -1000em;
+    }
+}
+
+/* NH-1256 */
+@media all and (max-width: 767px) and (orientation: landscape) {
+  .field-prompt-min {
+        display: none;
+    }
+
+    .dropdown-left{
+      right: 0; left: auto; 
+    }
+
+}
+
+
+@media all and (max-width: 767px) and (orientation: portrait)  {
+    .table-row-min{
+        padding-bottom: 30px;
+    }
+
+    .field-value-min {
+        float: right;
+    }
+
+    .field-prompt-min {
+      display: inline-block;
+    }
+
+    field-prompt-min:empty:before {
+      content: "\200b"; /* unicode zero width space character */
+    }
+
+    .rsv_P402 .fa-trash {
+       padding-top: 20px;
+    }
+
+    .dropdown-left{
+      right: 0; left: auto;
+    }
+
+}
+
+/* NHE-33 support icon action links*/
+.action-group{
+   white-space: nowrap;
+}
+
+.action-item{
+   display:inline;
+   margin-right:1em;
+}
+
+action-item.a{
+   text-decoration:none;
+}
+
+ .action-group-hdr{
+   border-top: solid 1px #ccc;
+}
+
+@media (max-width: 767px) {
+   .action-group-hdr{
+     border-top: none;
+      padding-top:30px;
+   }
+}
+
+/* NH-1256 */
+@media (max-width: 767px) {
+    .rsv_P448 .btn-default {
+       height:100px;
+       width:130px;
+    }
+
+/* NH-1256 */
+   .rsv_P193 .btn-load-more{
+       width:230px;
+    }
+}
+
+/* NHE-376 */
+.rsv_P127 .action-group {
+    display: inline-block;
+}
+/* NHE-376 */           
+.rsv_P111 .action-group {
+    display: inline-block;
+}
+
+/* NH-930 modal window truncated without scroll on IOS*/
+@supports (-webkit-overflow-scrolling: touch) {
+    /* CSS specific to iOS devices */ 
+   .modal {
+       height: 1200px;
+       max-height: 100%;
+    }
+    .modal-content {
+       position: absolute;
+       width: 100%;
+       height: 100%;
+       -webkit-overflow-scrolling: touch;
+      overflow-y: scroll; 
+    }
+}
+/*NH-5089 */
+@media (max-width: 767px) {
+.ui-dialog--notification
+{
+width : 320px !important;
+}
+}
+
+/* NH-927 */
+@media all and (min-width: 767px) {
+
+    .dropdown-left{
+      right: 0; left: auto;
+    }
+
+}
+
+/* NH-1642 hide accessibility skip link */
+#skip a
+{
+position:absolute; 
+left:-10000px; 
+top:auto; 
+width:1px; 
+height:1px; 
+overflow:hidden;
+} 
+
+#skip a:focus 
+{
+position:static; 
+width:auto; 
+height:auto; 
+}
+
+@media only screen and (min-width: 768px) and (max-width : 1024px) {
+.div-table-min {
+  font-size: 1vw;
+}
+}
+
+/* NH-11129 new class input-group-date */
+.input-group-date {
+    position: relative;
+    display: table;
+    border-collapse: separate;
+}
+
+/* NHE-5670 HOL Update Appointment AM PM availability button items */
+.rsv_P243 .selectableList {
+    display: inline-flex;
+}
+
+.rsv_P243 .selectable-item {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.rsv_P243 .form-hide-cbx{
+    display:none;
+}
+
+.rsv_P243 .form-hide-cbx-label {
+      min-width: 50px;
+}
+
+.rsv_P243 .rsv-access:before {
+  font-weight: bold;
+    padding-right: 15px;
+    padding-top: 10px;
+}
+
+.rsv_P243 .rsv-access-am:before {
+  min-width: 25%;
+  content: "Access AM";
+}
+
+.rsv_P243 .rsv-access-pm:before {
+  min-width: 25%;
+  content: "Access PM";
+}
+
+.rsv_P243 .rsv-access-pm{
+   padding-bottom: 20px;    
+}
+
+/* NH-16216 hide Next, Previous text links within pagination */
+.pagination a.fielddata {
+  display:none;
+}
+
+/* NH-16724 align p112 Sort and Filter region items */
+
+span#P112_SORT_FILTER2 {
+    margin-top: 30px;
+}
+
+a#P112_VIEW2 {
+    margin-top: 25px;
+}
