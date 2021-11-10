@@ -1,0 +1,56 @@
+/*
+Title: RMBC Styles for Northgate Housing
+Description: Styles override default theme styles to apply corporate colours and fonts
+Version: 1.0
+Created by: John Kelly
+Date created: 10/11/2021
+Last updated: 10/11/2021
+*/
+
+/* import corporate fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Mulish:wght@400;700&display=swap');
+
+body {
+  font-family: 'Mulish', sans-serif;
+  font-size: 16px;
+  color: #002554;
+}
+
+p {
+  font-size: 1rem;
+}
+
+h1,h2,h3,h4 {
+  font-family: 'Josefin Sans', sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #002554;
+}
+
+.navbar {
+    background-image: none;
+    background-color: #002554;
+    padding: 1.5rem;
+}
+
+span {
+  font-size: 1.75rem;
+}
+
+.login-region {
+    background: #DBE4E9;
+    padding: 2.25rem;
+}
+
+.login-message, .bold-label {
+    font-weight: 700;
+    font-size: 2.75rem;
+}
+
+footer, .footer {
+    background-image: none;
+    background-color: #002554;
+    padding: 1.5rem;
+    border: none;
+}
