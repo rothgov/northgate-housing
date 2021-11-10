@@ -17,6 +17,8 @@ body {
   color: #002554;
 }
 
+/* typography */
+
 p {
   font-size: 1rem;
 }
@@ -28,6 +30,38 @@ h1,h2,h3,h4 {
   color: #002554;
 }
 
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 28px;
+}
+
+h3 {
+  font-size 24px;
+}
+
+h4 {
+  font-size 20px;
+}
+
+a:link {
+    color: #002554;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:visited {
+    color: #a0505c;
+}
+
+/* header */
+
 .navbar {
     background-image: none;
     background-color: #002554;
@@ -38,6 +72,12 @@ span {
   font-size: 1.75rem;
 }
 
+/* forms */
+
+form {
+  line-height: 1.5
+}
+
 .login-region {
     background: #DBE4E9;
     padding: 2.25rem;
@@ -46,7 +86,42 @@ span {
 .login-message, .bold-label {
     font-weight: 700;
     font-size: 2.75rem;
+    color: #002554;
 }
+
+.text_field, .apex-item-text, .form-control {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding: 1.5rem;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #002554;
+    border-radius: 0;
+}
+
+.btn-primary {
+  background-color: #002554 !important;
+  color: #ffffff !important;
+  margin-top: 8px !important;
+  margin-bottom: 8px !important;
+  border: 2px solid #002554;
+  text-decoration: none !important;
+}
+
+.btn-default {
+  background-color: #ffffff !important;
+  color: #002554;
+   margin-top: 8px !important;
+  margin-bottom: 8px !important;
+  border: 2px solid #002554;
+  text-decoration: none !important;
+}
+
+/* footer */
 
 footer, .footer {
     background-image: none;
