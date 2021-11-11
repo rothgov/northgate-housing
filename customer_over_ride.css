@@ -4,7 +4,7 @@ Description: Styles override default theme styles to apply corporate colours and
 Version: 1.0
 Created by: John Kelly
 Date created: 10/11/2021
-Last updated: 10/11/2021
+Last updated: 11/11/2021
 */
 
 /* import corporate fonts */
@@ -60,6 +60,14 @@ a:visited {
     color: #a0505c;
 }
 
+.page-header {
+    border-bottom: 1px solid #001a3e;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 2.5rem;
+    padding-bottom: 1.75rem;
+}
+
 /* header */
 
 .navbar {
@@ -79,7 +87,7 @@ form {
 }
 
 .login-region {
-    background: #DBE4E9;
+    background: #e2ebf1;
     padding: 2.25rem;
 }
 
@@ -87,6 +95,7 @@ form {
     font-weight: 700;
     font-size: 2.75rem;
     color: #002554;
+    border-bottom: none;
 }
 
 .text_field, .apex-item-text, .form-control {
@@ -103,6 +112,32 @@ form {
     border-radius: 0;
 }
 
+label {
+  font-size: 16px;
+  font-weight: 700 !important;
+  margin-bottom: 12px;
+}
+
+.input-group-addon {
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 16px;
+    padding-bottom: 2px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #555;
+    text-align: center;
+    background-color: #ffffff;
+    border: 1px solid #eeece8;
+    border-left-color: #eeece8;
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-radius: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
 .btn-primary {
   background-color: #002554 !important;
   color: #ffffff !important;
@@ -110,26 +145,39 @@ form {
   margin-bottom: 8px !important;
   border: 2px solid #002554;
   text-decoration: none !important;
+  font-size: 18px;
+}
+
+.btn-primary:hover {
+  background-color: #66CBF3 !important;
+  color: #002554 !important;
+  border: 2px solid #002554;
+  text-shadow: none;
 }
 
 .btn-default {
   background-color: #ffffff !important;
   color: #002554;
-   margin-top: 8px !important;
+  margin-top: 8px !important;
   margin-bottom: 8px !important;
   border: 2px solid #002554;
   text-decoration: none !important;
+  color: #002554;
+  font-size: 18px;
 }
 
-.btn:hover {
+.btn-default:hover {
   background-color: #66CBF3 !important;
+  color: #002554 !important;
+  border: 2px solid #002554;
+  text-shadow: none;
 }
 
 /* footer */
 
 footer, .footer {
-    background-image: none;
-    background-color: #002554;
-    padding: 1.5rem;
-    border: none;
+  background-image: none;
+  background-color: #002554;
+  padding: 1.5rem;
+  border: none;
 }
