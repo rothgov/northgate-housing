@@ -81,6 +81,13 @@ span {
 
 /* forms */
 
+#wwvFlowForm {
+  min-height: 100%;
+  height: auto;
+  position: relative;
+  margin: 0 auto -60px;
+}
+
 form {
   line-height: 1.5
 }
@@ -217,4 +224,5 @@ footer, .footer {
   background-color: #002554;
   padding: 1.5rem;
   border: none;
+  line-height: 1.5;
 }
