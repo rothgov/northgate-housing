@@ -4,13 +4,12 @@ Description: Styles override default theme styles to apply corporate colours and
 Version: 1.0
 Created by: John Kelly
 Date created: 10/11/2021
-Last updated: 11/11/2021
+Last updated: 12/11/2021
 */
 
 /* import corporate fonts */
 
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Mulish:wght@400;700&display=swap');
-
 body {
   font-family: 'Mulish', sans-serif;
   font-size: 16px;
@@ -23,7 +22,7 @@ p {
   font-size: 1rem;
 }
 
-h1,h2,h3,h4 {
+h1, h2, h3, h4 {
   font-family: 'Josefin Sans', sans-serif;
   text-transform: uppercase;
   font-weight: 700;
@@ -47,33 +46,33 @@ h4 {
 }
 
 a:link {
-    color: #002554;
-    font-weight: 700;
-    text-decoration: underline;
+  color: #002554;
+  font-weight: 700;
+  text-decoration: underline;
 }
 
 a:hover {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 a:visited {
-    color: #a0505c;
+  color: #a0505c;
 }
 
 .page-header {
-    border-bottom: 1px solid #001a3e;
-    margin-left: 0;
-    margin-right: 0;
-    margin-bottom: 2.5rem;
-    padding-bottom: 1.75rem;
+  border-bottom: 1px solid #001a3e;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 2.5rem;
+  padding-bottom: 1.75rem;
 }
 
 /* header */
 
 .navbar {
-    background-image: none;
-    background-color: #002554;
-    padding: 1.5rem;
+  background-image: none;
+  background-color: #002554;
+  padding: 1.5rem;
 }
 
 span {
@@ -87,29 +86,29 @@ form {
 }
 
 .login-region {
-    background: #e2ebf1;
-    padding: 2.25rem;
+  background: #e2ebf1;
+  padding: 2.25rem;
 }
 
 .login-message, .bold-label {
-    font-weight: 700;
-    font-size: 2.75rem;
-    color: #002554;
-    border-bottom: none;
+  font-weight: 700;
+  font-size: 2.75rem;
+  color: #002554;
+  border-bottom: none;
 }
 
 .text_field, .apex-item-text, .form-control {
-    display: block;
-    width: 100%;
-    height: auto;
-    padding: 1.5rem;
-    font-size: 16px;
-    line-height: 1.5;
-    color: #555;
-    background-color: #fff;
-    background-image: none;
-    border: 1px solid #002554;
-    border-radius: 0;
+  display: block;
+  width: 100%;
+  height: auto;
+  padding: 1.5rem;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #002554;
+  border-radius: 0;
 }
 
 label {
@@ -119,23 +118,23 @@ label {
 }
 
 .input-group-addon {
-    padding-left: 8px;
-    padding-right: 8px;
-    padding-top: 16px;
-    padding-bottom: 2px;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 1.5;
-    color: #555;
-    text-align: center;
-    background-color: #ffffff;
-    border: 1px solid #eeece8;
-    border-left-color: #eeece8;
-    border-left-style: solid;
-    border-left-width: 1px;
-    border-radius: 0;
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 16px;
+  padding-bottom: 2px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #555;
+  text-align: center;
+  background-color: #ffffff;
+  border: 1px solid #eeece8;
+  border-left-color: #eeece8;
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-radius: 0;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
 }
 
 .btn-primary {
@@ -171,6 +170,44 @@ label {
   color: #002554 !important;
   border: 2px solid #002554;
   text-shadow: none;
+}
+
+/* alerts */
+
+.panel, .alert-danger, .alert-default {
+  display: block;
+  width: 100%;
+  height: auto;
+  background-image: none;
+  background-color: #f1a3aa;
+  border-radius: 0;
+}
+
+.fa, .fa-lg {
+  font-family: 'Josefin Sans', sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #002554;
+  margin-top: 16px;
+}
+
+.panel-body {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+table, tbody, tr, td {
+  padding: 8px;
+  line-height: 1.5 !important;
+  vertical-align: top;
+  border-top: none !important;
+  color: #002554;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.table-curved, .panel, .panel-default {
+  box-shadow: none;
 }
 
 /* footer */
