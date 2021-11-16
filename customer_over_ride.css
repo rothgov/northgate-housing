@@ -4,7 +4,7 @@ Description: Styles override default theme styles to apply corporate colours and
 Version: 1.0
 Created by: John Kelly
 Date created: 10/11/2021
-Last updated: 16/11/2021
+Last updated: 12/11/2021
 */
 
 /* import corporate fonts */
@@ -93,6 +93,16 @@ a:visited {
 
 .nav a {
   color: #002554 !important;
+}
+
+.table-row {
+  background: #e2ebf1 !important;
+  color: #002554;
+}
+
+.column {
+  background: #e2ebf1;
+  color: #002554;
 }
 
 span {
