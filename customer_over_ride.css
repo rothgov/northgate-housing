@@ -95,6 +95,10 @@ a:visited {
   color: #002554 !important;
 }
 
+.nav a:hover {
+  background-color: #eeece8 !important;
+}
+
 .table-row {
   background: #e2ebf1 !important;
   color: #002554;
