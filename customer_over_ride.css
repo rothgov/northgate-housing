@@ -138,6 +138,10 @@ form {
   padding: 2.25rem;
 }
 
+.cdecategory {
+  background: #e2ebf1;
+}
+
 .login-message, .bold-label {
   font-weight: 700;
   font-size: 2.75rem;
@@ -193,6 +197,7 @@ label {
   border: 2px solid #002554;
   text-decoration: none !important;
   font-size: 18px;
+  border-radius: 0;
 }
 
 .btn-primary:hover {
@@ -211,9 +216,29 @@ label {
   text-decoration: none !important;
   color: #002554;
   font-size: 18px;
+  border-radius: 0;
 }
 
 .btn-default:hover {
+  background-color: #66CBF3 !important;
+  color: #002554 !important;
+  border: 2px solid #002554;
+  text-shadow: none;
+}
+
+.btn-success {
+  background-image: none;
+  background-color: #002554 !important;
+  color: #ffffff !important;
+  margin-top: 8px !important;
+  margin-bottom: 8px !important;
+  border: 2px solid #002554;
+  text-decoration: none !important;
+  font-size: 18px;
+  border-radius: 0;
+}
+
+.btn-success:hover {
   background-color: #66CBF3 !important;
   color: #002554 !important;
   border: 2px solid #002554;
