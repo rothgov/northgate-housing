@@ -113,6 +113,10 @@ span {
   font-size: 1.75rem;
 }
 
+.st-current {
+  font-size: 1.75rem;
+}
+
 /* forms */
 
 #wwvFlowForm {
@@ -284,14 +288,62 @@ label {
   box-shadow: 0;
 }
 
-.panel-body {
+.panel-heading {
+  background-image: none;
+  border-radius: 0;
+  background-image: none;
+  background-color: #e2ebf1 !important;
+  color: #002554 !important;
+}
+
+.panel, .panel-horizontal {
   padding-top: 0;
   padding-bottom: 0;
+  background-color: #e2ebf1;
+  outline: none;
+  border-radius: 0 !important;
 }
 
 .panel-body, .panel-custom {
   background-color: #e2ebf1;
   outline: none;
+}
+
+.panel-default-blue .panel-heading {
+  border-color: #e2ebf1 !important;
+  color: #fff;
+  background: none;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.panel-primary>.panel-heading {
+  background-image: none;
+  border-color: #e2ebf1 !important;
+  color: #fff;
+  background: none;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.panel-white-green .panel-footer {
+  border-top: 1px solid #a4d0b1 !important;
+  border-color: #a4d0b1 !important;
+  color: #002554;
+  background-color: #a4d0b1;
+  border-radius: 0;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.panel-footer {
+  padding: 10px 15px;
+  background-color: #eeece8;
+  border-top: 1px solid #eeece8 !important;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  font-size: 18px;
+  line-height: 1.5;
 }
 
 .control-label {
