@@ -4,7 +4,7 @@ Description: Styles override default theme styles to apply corporate colours and
 Version: 1.0
 Created by: John Kelly
 Date created: 10/11/2021
-Last updated: 12/11/2021
+Last updated: 16/11/2021
 */
 
 /* import corporate fonts */
@@ -86,6 +86,15 @@ a:visited {
   padding: 1.5rem;
 }
 
+.nav {
+  background: #e2ebf1;
+  color: #002554;
+}
+
+.nav a {
+  color: #002554 !important;
+}
+
 span {
   font-size: 1.75rem;
 }
@@ -97,6 +106,17 @@ span {
   height: auto;
   position: relative;
   margin: 0 auto -60px;
+}
+
+fieldset {
+  background: #e2ebf1;
+  padding: 2.25rem;
+  color: #002554;
+}
+
+.form-group {
+  background: #e2ebf1;
+  color: #002554;
 }
 
 form {
