@@ -336,6 +336,12 @@ label {
   line-height: 1.5;
 }
 
+.panel-white-green .panel-heading {
+  border-color: #a4d0b1;
+  color: #002554;
+  background-color: #fff;
+}
+
 .panel-footer {
   padding: 10px 15px;
   background-color: #eeece8;
