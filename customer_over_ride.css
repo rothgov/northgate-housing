@@ -137,6 +137,10 @@ form {
   line-height: 1.5
 }
 
+.table-container {
+  background: #e2ebf1 !important;
+}
+
 .login-region {
   background: #e2ebf1;
   padding: 2.25rem;
@@ -194,6 +198,7 @@ label {
 }
 
 .btn-primary {
+  background-image: none;
   background-color: #002554 !important;
   color: #ffffff !important;
   margin-top: 8px !important;
@@ -201,6 +206,7 @@ label {
   border: 2px solid #002554;
   text-decoration: none !important;
   font-size: 18px;
+  line-height: 1.5;
   border-radius: 0;
 }
 
@@ -220,6 +226,7 @@ label {
   text-decoration: none !important;
   color: #002554;
   font-size: 18px;
+  line-height: 1.5;
   border-radius: 0;
 }
 
@@ -239,6 +246,7 @@ label {
   border: 2px solid #002554;
   text-decoration: none !important;
   font-size: 18px;
+  line-height: 1.5;
   border-radius: 0;
 }
 
