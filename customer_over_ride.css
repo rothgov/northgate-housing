@@ -201,6 +201,11 @@ label {
   border-bottom-left-radius: 0;
 }
 
+.input-group .form-control:not(:first-child):not(:last-child) {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
 .btn-primary {
   background-image: none;
   background-color: #002554 !important;
