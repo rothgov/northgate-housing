@@ -4,7 +4,7 @@ Description: Styles override default theme styles to apply corporate colours and
 Version: 1.0
 Created by: John Kelly
 Date created: 10/11/2021
-Last updated: 12/11/2021
+Last updated: 17/11/2021
 */
 
 /* import corporate fonts */
@@ -247,11 +247,12 @@ label {
   color: #ffffff !important;
   margin-top: 8px !important;
   margin-bottom: 8px !important;
-  border: 2px solid #002554;
+  border: 2px solid #002554 !important;
   text-decoration: none !important;
   font-size: 18px;
   line-height: 1.5;
   border-radius: 0;
+  box-shadow: none;
 }
 
 .btn-success:hover {
@@ -260,8 +261,6 @@ label {
   border: 2px solid #002554;
   text-shadow: none;
 }
-
-/* alerts */
 
 .panel, .alert-danger, .alert-default {
   display: block;
