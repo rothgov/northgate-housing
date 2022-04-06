@@ -4,7 +4,7 @@ Description: Styles override default theme styles to apply corporate colours and
 Version: 1.0
 Created by: John Kelly
 Date created: 10/11/2021
-Last updated: 22/03/2022
+Last updated: 06/04/2022
 */
 
 /* import corporate fonts */
@@ -341,23 +341,23 @@ label {
   line-height: 1.5;
 }
 .panel-primary>.panel-heading {
-  background-image: none;
+  background-image: none !important;
   border-color: #e2ebf1 !important;
-  color: #fff;
-  background: none;
-  font-size: 18px;
-  line-height: 1.5;
+  color: #ffffff !important;
+  background: none !important;
+  font-size: 18px !important;
+  line-height: 1.5 !important;
 }
 .panel-white-green .panel-footer {
-  color: #002554;
-  background-color: #ffffff;
-  border-radius: 0;
-  font-size: 1.75rem;
-  line-height: 1.5;
+  color: #ffffff !important;
+  background-color: #002554 !important;
+  border-radius: 0 !important;
+  font-size: 1.75rem !important;
+  line-height: 1.5 !important;
 }
 .panel-white-green .panel-heading {
-  color: #002554;
-  background-color: #fff;
+  color: #002554 !important;
+  background-color: #ffffff !important;
 }
 .panel-footer {
   font-size: 1.75rem !important;
@@ -365,14 +365,16 @@ label {
   padding-right: 2rem !important;
   padding-top: 2rem !important;
   padding-bottom: 2rem !important;
-  background-color: #ffffff;
+  background-color: #002554;
   border: 1px solid #002554 !important;
   border-radius: 0;
   line-height: 1.5;
   text-decoration: none !important;
+  color: #ffffff !important;
 }
 .panel-footer:hover {
   background: #66cbf3 !important;
+  color: #002554 !important;
 }
 .control-label {
   padding-top: 8px;
