@@ -4,122 +4,153 @@ Description: Styles override default theme styles to apply corporate colours and
 Version: 1.0
 Created by: John Kelly
 Date created: 10/11/2021
-Last updated: 06/04/2022
+Last updated: 28/04/2022
 */
 
 /* import corporate fonts */
 
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Mulish:wght@400;700&display=swap');
+
 :focus {
   outline: 3px solid #ffe13b !important;
   box-shadow: none !important;
 }
+
 :selection {
   background-color: #ffe13b !important;
   color: #252b36 !important;
   text-shadow: none !important;
 }
+
 body {
   font-family: 'Mulish', sans-serif;
   font-size: 16px;
   color: #002554;
 }
+
 /* typography */
 
 /* ----- Positive Negative Zero Currency Numbers ----- */
 
 .negative_currency:before {
-  content: "-\00a3";
+  content: none !important;
   white-space: nowrap;
 }
+
 .negative_currency {
   color: #000000;
   text-decoration: none;
 }
+
 .negative_currency:hover {
   color: #000000;
   border-bottom: 1px solid #000000;
   text-decoration: none;
 }
+
 .positive_currency:before {
   content: "+\00a3";
   white-space: nowrap;
 }
+
 .positive_currency {
   color: #000000;
   text-decoration: none;
 }
+
 .positive_currency:hover {
   color: #205139;
   border-bottom: 1px solid #000000;
   text-decoration: none;
 }
+
 .zero_currency {
   color: #000000;
 }
+
 .zero_currency:before {
   content: "\00a3";
   white-space: nowrap;
 }
+
 .zero_currency:hover {
   color: #000000;
   border-bottom: 1px solid #000000;
   text-decoration: none;
 }
+
 .currency_link:hover {
   text-decoration: none;
 }
+
 .negative_value {
   color: #000000;
 }
+
 .zero_value {
   color: #000000;
 }
+
 .positive_value {
   color: #000000;
 }
+
 /* ----- Positive Negative Zero Currency Numbers END ----- */
 
 p {
   font-size: 1rem;
 }
-h1, h2, h3, h4 {
+
+h1,
+h2,
+h3,
+h4 {
   font-family: 'Josefin Sans', sans-serif;
   text-transform: uppercase;
   font-weight: 700;
   color: #002554;
 }
+
 h1 {
   font-size: 36px;
 }
+
 h2 {
   font-size: 28px;
 }
+
 h3 {
-  font-size 24px;
+  font-size: 24px;
 }
+
 h4 {
-  font-size 20px;
+  font-size: 20px;
 }
+
 h5 {
   font-size: 18px;
 }
+
 a:link {
   color: #002554;
   font-weight: 700;
   text-decoration: underline;
 }
+
 .body-primary-region a:link {
   color: #002554;
   font-weight: 700;
   text-decoration: none !important;
 }
+
 a:visited {
   color: #002554;
 }
+
 a:hover {
   text-decoration: none;
 }
+
 .page-header {
   border-bottom: 1px solid #001a3e;
   margin-left: 0;
@@ -127,6 +158,7 @@ a:hover {
   margin-bottom: 2.5rem;
   padding-bottom: 1.75rem;
 }
+
 /* header */
 
 .navbar {
@@ -134,30 +166,38 @@ a:hover {
   background-color: #002554;
   padding: 1.5rem;
 }
+
 .nav {
   background: #e2ebf1;
   color: #002554;
 }
+
 .nav a {
   color: #002554 !important;
 }
+
 .nav a:hover {
   background-color: #66cbf3 !important;
 }
+
 .table-row {
   background: #e2ebf1 !important;
   color: #002554;
 }
+
 .column {
   background: #e2ebf1;
   color: #002554;
 }
+
 span {
   font-size: 1.75rem;
 }
+
 .st-current {
   font-size: 1.75rem;
 }
+
 /* forms */
 
 #wwvFlowForm {
@@ -166,35 +206,46 @@ span {
   position: relative;
   margin: 0 auto -60px;
 }
+
 fieldset {
   background: #e2ebf1;
   padding: 2.25rem;
   color: #002554;
 }
+
 .form-group {
   background: #e2ebf1;
   color: #002554;
 }
+
 form {
   line-height: 1.5
 }
+
 .table-container {
   background: #e2ebf1 !important;
 }
+
 .login-region {
   background: #e2ebf1;
   padding: 2.25rem;
 }
+
 .cdecategory {
   background: #e2ebf1;
 }
-.login-message, .bold-label {
+
+.login-message,
+.bold-label {
   font-weight: 700;
   font-size: 2.75rem;
   color: #002554;
   border-bottom: none;
 }
-.text_field, .apex-item-text, .form-control {
+
+.text_field,
+.apex-item-text,
+.form-control {
   display: block;
   width: 100%;
   height: auto;
@@ -207,11 +258,17 @@ form {
   border: 1px solid #002554;
   border-radius: 0;
 }
+
 label {
   font-size: 16px;
   font-weight: 700 !important;
   margin-bottom: 12px;
 }
+
+.statement-text {
+  text-align: left !important;
+}
+
 .input-group-addon {
   padding-left: 8px;
   padding-right: 8px;
@@ -231,14 +288,17 @@ label {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
 }
+
 .input-group .form-control:not(:first-child):not(:last-child) {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
 }
+
 .form-control {
   margin-top: .25rem !important;
   margin-bottom: 1rem !important;
 }
+
 .btn-primary {
   background-image: none;
   background-color: #002554 !important;
@@ -254,12 +314,14 @@ label {
   line-height: 1.5;
   border-radius: 0;
 }
+
 .btn-primary:hover {
   background-color: #66CBF3 !important;
   color: #002554 !important;
   border: 2px solid #002554;
   text-shadow: none;
 }
+
 .btn-default {
   background-color: #ffffff !important;
   color: #002554;
@@ -272,12 +334,14 @@ label {
   line-height: 1.5;
   border-radius: 0;
 }
+
 .btn-default:hover {
   background-color: #66CBF3 !important;
   color: #002554 !important;
   border: 2px solid #002554;
   text-shadow: none;
 }
+
 .btn-success {
   background-image: none;
   background-color: #002554 !important;
@@ -291,13 +355,17 @@ label {
   border-radius: 0;
   box-shadow: none;
 }
+
 .btn-success:hover {
   background-color: #66CBF3 !important;
   color: #002554 !important;
   border: 2px solid #002554;
   text-shadow: none;
 }
-.panel, .alert-danger, .alert-default {
+
+.panel,
+.alert-danger,
+.alert-default {
   display: block;
   width: 100%;
   height: auto;
@@ -305,12 +373,15 @@ label {
   background-color: #f1a3aa;
   border-radius: 0;
 }
-.fa, .fa-lg {
+
+.fa,
+.fa-lg {
   text-transform: uppercase;
   font-weight: 700;
   color: #002554;
   margin-top: 16px;
 }
+
 .panel {
   margin-bottom: 20px;
   background-color: #fff;
@@ -318,21 +389,27 @@ label {
   border-radius: 0;
   box-shadow: 0;
 }
+
 .panel-heading {
   display: none !important;
   visibility: hidden !important;
 }
-.panel, .panel-horizontal {
+
+.panel,
+.panel-horizontal {
   padding-top: 0;
   padding-bottom: 0;
   background-color: #e2ebf1;
   outline: none;
   border-radius: 0 !important;
 }
-.panel-body, .panel-custom {
+
+.panel-body,
+.panel-custom {
   background-color: #e2ebf1;
   outline: none;
 }
+
 .panel-default-blue .panel-heading {
   border-color: #e2ebf1 !important;
   color: #fff;
@@ -340,6 +417,7 @@ label {
   font-size: 18px;
   line-height: 1.5;
 }
+
 .panel-primary>.panel-heading {
   background-image: none !important;
   border-color: #e2ebf1 !important;
@@ -348,6 +426,7 @@ label {
   font-size: 18px !important;
   line-height: 1.5 !important;
 }
+
 .panel-white-green .panel-footer {
   color: #ffffff !important;
   background-color: #002554 !important;
@@ -355,10 +434,12 @@ label {
   font-size: 1.75rem !important;
   line-height: 1.5 !important;
 }
+
 .panel-white-green .panel-heading {
   color: #002554 !important;
   background-color: #ffffff !important;
 }
+
 .panel-footer {
   font-size: 1.75rem !important;
   padding-left: 2rem !important;
@@ -372,15 +453,21 @@ label {
   text-decoration: none !important;
   color: #ffffff !important;
 }
+
 .panel-footer:hover {
   background: #66cbf3 !important;
   color: #002554 !important;
 }
+
 .control-label {
   padding-top: 8px;
   padding-left: 8px;
 }
-table, tbody, tr, td {
+
+table,
+tbody,
+tr,
+td {
   padding: 8px;
   line-height: 1.5 !important;
   vertical-align: top;
@@ -389,12 +476,17 @@ table, tbody, tr, td {
   padding-left: 0 !important;
   padding-right: 0 !important;
 }
-.table-curved, .panel, .panel-default {
+
+.table-curved,
+.panel,
+.panel-default {
   box-shadow: none;
 }
+
 /* footer */
 
-footer, .footer {
+footer,
+.footer {
   background-image: none;
   background-color: #002554;
   padding: 1.5rem;
