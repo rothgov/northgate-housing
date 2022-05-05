@@ -4,7 +4,7 @@ Description: Styles override default theme styles to apply corporate colours and
 Version: 1.0
 Created by: John Kelly
 Date created: 10/11/2021
-Last updated: 28/04/2022
+Last updated: 05/05/2022
 */
 
 /* import corporate fonts */
@@ -33,7 +33,7 @@ body {
 /* ----- Positive Negative Zero Currency Numbers ----- */
 
 .negative_currency:before {
-  content: none !important;
+  content: "\00a3" !important;
   white-space: nowrap;
 }
 
@@ -138,7 +138,7 @@ a:link {
 }
 
 .body-primary-region a:link {
-  color: #002554;
+  color: #002554 !important;
   font-weight: 700;
   text-decoration: none !important;
 }
@@ -265,6 +265,11 @@ label {
   margin-bottom: 12px;
 }
 
+.payment-text {
+  display: none !important;
+  visibility: hidden !important;
+}
+
 .statement-text {
   text-align: left !important;
 }
@@ -324,12 +329,11 @@ label {
 
 .btn-default {
   background-color: #ffffff !important;
-  color: #002554;
+  color: #002554 !important;
   margin-top: 8px !important;
   margin-bottom: 8px !important;
   border: 2px solid #002554;
   text-decoration: none !important;
-  color: #002554;
   font-size: 18px;
   line-height: 1.5;
   border-radius: 0;
