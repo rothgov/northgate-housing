@@ -4,7 +4,7 @@ Description: Styles override default theme styles to apply corporate colours and
 Version: 1.0
 Created by: John Kelly
 Date created: 10/11/2021
-Last updated: 05/05/2022
+Last updated: 06/05/2022
 */
 
 /* import corporate fonts */
@@ -49,7 +49,7 @@ body {
 }
 
 .positive_currency:before {
-  content: "+\00a3";
+  content: "-\00a3";
   white-space: nowrap;
 }
 
