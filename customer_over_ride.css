@@ -4,7 +4,7 @@ Description: Styles override default theme styles to apply corporate colours and
 Version: 1.0
 Created by: John Kelly
 Date created: 10/11/2021
-Last updated: 09/05/2022
+Last updated: 12/05/2022
 */
 
 /* import corporate fonts */
@@ -190,6 +190,10 @@ a:hover {
   color: #002554;
 }
 
+.column-min {
+  text-align: right !important;
+}
+
 span {
   font-size: 1.75rem;
 }
@@ -332,6 +336,8 @@ label {
   color: #002554 !important;
   margin-top: 8px !important;
   margin-bottom: 8px !important;
+  padding-top: 1.25rem !important;
+  padding-bottom: 1.25rem !important;
   border: 2px solid #002554;
   text-decoration: none !important;
   font-size: 18px;
@@ -352,6 +358,8 @@ label {
   color: #ffffff !important;
   margin-top: 8px !important;
   margin-bottom: 8px !important;
+  padding-top: 1.25rem !important;
+  padding-bottom: 1.25rem !important;
   border: 2px solid #002554 !important;
   text-decoration: none !important;
   font-size: 18px;
@@ -480,6 +488,7 @@ table,
 tbody,
 tr,
 td {
+  text-align: right !important;
   padding: 8px;
   line-height: 1.5 !important;
   vertical-align: top;
